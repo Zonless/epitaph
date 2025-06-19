@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>证明我们来过。</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #6c7ae0;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            border-left: 5px solid #6c7ae0;
+            padding-left: 10px;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        /* 时间轴样式，应用于 .timeline 而非整个 section */
+        .timeline {
+            position: relative;
+            margin-left: 30px; /* 与标题对齐 */
+            padding: 20px 0 0; /* 顶部留出空间给 h2 */
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #6c7ae0;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 40px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px; /* 相对于 .timeline-left 位置 */
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #6c7ae0;
+            border-radius: 50%;
+        }
+        .timeline-item h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .timeline-item p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+            color: #555;
+        }
+        #epitaph p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        #memories ul {
+            list-style: none;
+            padding: 0;
+        }
+        #memories li {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+		#messages ul {
+            list-style: none;
+            padding: 0;
+        }
+        #messages li {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>至少我们来过。</h1>
+        <p>致我们的青春，永不散场</p>
+        <p>广州市执信中学(天河校区)初中2025届2班 纪念</p>
+    </header>
+    <main class="container">
+        <section id="epitaph">
+            <h2>墓志铭</h2>
+            <p>“在这里，埋葬着我们共同走过的青葱岁月。那些欢笑与泪水，那些拼搏与汗水，都化作永恒的记忆，铭刻在时光的长河中。初三(2)班，永远年轻，永远热泪盈眶。”</p>
+        </section>
+        <section id="memories">
+            <h2>回忆录</h2>
+            <ul>
+                <li>—— 02**：***，***。</li>
+                <li>—— 02**：***，***。</li>
+                <li>—— 02**：***，***。</li>
+                <li>—— 02**：***，***。</li>
+            </ul>
+        </section>
+        <section id="timeline">
+            <h2>成长足迹</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>2022年9月 - 入学</h3>
+                    <p>踏入执信中学，开启2班精彩篇章。</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>***年**月 - **</h3>
+                    <p>***</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>***年**月 - **</h3>
+                    <p>***</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2025年6月 - 毕业考前冲刺</h3>
+                    <p>日夜复习，只为金榜题名。</p>
+                </div>
+            </div>
+        </section>
+		<section id="messages">
+			<h2>毕业寄语</h2>
+			<ul>
+				<li>愿我们的青春与梦想，永不褪色。</li>
+				<li>毕业快乐朋友，到了高中别忘了我们。</li>
+				<li>未来是我们的，我们永不迷失。</li>
+				<li>来句老话：聚是一团火，散是满天星。毕业快乐。</li>
+			</ul>
+		</section>
+    </main>
+    <footer>
+        <p>© 2025 广州市执信中学(天河校区)初中2025届2班</p>
+    </footer>
+</body>
+</html>
